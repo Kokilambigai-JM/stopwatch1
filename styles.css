@@ -1,72 +1,90 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color:rgb(199, 50, 204);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, rgb(86, 157, 170), rgb(3, 57, 73));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .stopwatch {
-    text-align: center;
-    background-color:rgb(255, 127, 255);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .display {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .controls {
-    margin-top: 20px;
-  }
-  
-  .control {
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .control.stop {
-    background-color: #f44336; /* Red color for stop button */
-  }
-  
-  .control:hover {
-    background-color: #45a049;
-  }
-  
-  .control:active {
-    transform: translateY(1px);
-  }
-  
-  .lap-times {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .lap-times li {
-    margin-bottom: 5px;
-    padding: 8px 12px;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    font-size: 0.9em;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+#container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+}
+
+#text {
+  color: brown;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+
+#clockContainer {
+  border: 5px solid black;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#timerText {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  background-color: white;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.buttonText {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#startButton {
+  background-color: green;
+  color: white;
+}
+
+#stopButton {
+  background-color: red;
+  color: white;
+}
+
+#resetButton {
+  background-color: rgb(49, 151, 191);
+  color: white;
+}
+
+.buttonText:hover {
+  filter: brightness(1.2);
+}
